@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "SmartCity",
+    "icon": "src/js/shared/res/assets/img/Icon-120.png",
+    "splash": {
+      "image": "src/js/shared/res/assets/img/splashscreen-XXXHDPIa.png",
+      "resizeMode": "cover"
+    },
+    "version": "1.0.0",
+    "slug": "smartcity",
+    "sdkVersion": "22.0.0",
+    "androidStatusBar":{
+
+    "barStyle":"light-content"
+},
+    "ios": {
+      "bundleIdentifier": "com.missingpixel.smartcity",
+      "publishBundlePath": "ios/smartcity/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/smartcity/Supporting/shell-app-manifest.json"
+    },
+    "android": {
+      "package": "com.missingpixel.smartcity"
+    },
+    "isDetached": true,
+    "detach": {
+      "scheme": "exp85bcecf637f0416ab7df1d5f01d5204d",
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.0.4-sdk22.0.0-10110e7c-e9b1-43e6-b7e0-8a0e971480e8.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.0.0-sdk22.0.0-7432f75c-05a1-4826-a456-02875e338222.tar.gz"
+    }
+  }
+}

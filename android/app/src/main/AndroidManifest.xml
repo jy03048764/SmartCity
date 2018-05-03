@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.missingpixel.smartcity"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <application
+    android:name=".MainApplication"
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:supportsRtl="true">
+    <activity android:name=".MainActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+              android:theme="@style/Theme.Exponent.Light"
+              android:windowSoftInputMode="adjustResize">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+
+      <intent-filter>
+        <data android:scheme="exp85bcecf637f0416ab7df1d5f01d5204d"/>
+
+        <action android:name="android.intent.action.VIEW"/>
+
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+      </intent-filter>
+    </activity>
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCHHltdISA5_SWgYvkWkTPXnHkQMPbmMEY"/>
+
+    <!-- The Facebook SDK runs FacebookInitProvider on startup and crashes if there isn't an ID here -->
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="fb0"/>
+  </application>
+
+</manifest>
+
